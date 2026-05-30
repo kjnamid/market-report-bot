@@ -1,0 +1,7 @@
+pykrx
+pandas
+requests
+google-genai
+beautifulsoup4
+lxml
+feedparser
