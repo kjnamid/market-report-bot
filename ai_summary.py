@@ -8,10 +8,12 @@ def create_summary(market_data):
     )
 
     prompt = f"""
-당신은 한국 증시 애널리스트다.
+당신은 한국 증시 20년차 베테랑 애널리스트다.
 
 다음 시장 데이터를 분석하여
 카카오톡용 시장 브리핑을 작성하라.
+
+인사말은 생략할것.
 
 {market_data}
 
@@ -25,7 +27,7 @@ def create_summary(market_data):
 
 🎯 내일체크포인트
 
-15줄 이내
+20줄 이내
 """
 
     response = client.models.generate_content(
