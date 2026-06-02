@@ -1,7 +1,8 @@
 # Windows PowerShell로 로컬에서 싫행 시
 
 $env:GEMINI_API_KEY="your_gemini_key"
-$env:KAKAO_ACCESS_TOKEN="your_kakao_token"
+$env:KAKAO_REST_API_KEY="your_kakao_rest_api_key"
+$env:KAKAO_REFRESH_TOKEN="your_kakao_refresh_token"
 pip install -r requirements.txt
 python main.py
 
@@ -11,12 +12,11 @@ python main.py
 GitHub 리포지토리 → Settings → Secrets and variables → Actions
 New repository secret 클릭
 GEMINI_API_KEY: 실제 API 키 입력
-                ( AIzaSyDp-R5NzyLHim_loE0jSHAeZABLiPbB2fk )
-KAKAO_ACCESS_TOKEN: 실제 토큰 입력
-                ( tPBcspUeE2h28d7hWD29EdN74zBcaFevAAAAAQoXC9cAAAGeeP7fmaew61y3DOUZ )
+KAKAO_REST_API_KEY: 실제 REST API 키 입력
+KAKAO_REFRESH_TOKEN: 실제 refresh token 입력
 
-Refresh_token
-( 0-fDqTZhmqqFgXCNcpIk7lZMRB4MPnEnAAAAAgoXC9cAAAGeeP7flKew61y3DOUZ )
+주의: 실제 API 키나 토큰은 README, bat 파일, Python 파일에 적지 말고
+.env 또는 GitHub Actions Secrets에만 저장합니다.
 
 ## 자동 실행 / 수동 실행
 1. schedule
