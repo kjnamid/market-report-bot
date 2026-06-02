@@ -52,8 +52,8 @@ def get_market_data():
         result.append(f"KOSPI 종가: {kospi_close}")
         result.append(f"KOSDAQ 종가: {kosdaq_close}")
 
-        print(f"KOSPI 종가: {kospi_close}")
-        print(f"KOSDAQ 종가: {kosdaq_close}")
+        # print(f"KOSPI 종가: {kospi_close}")
+        # print(f"KOSDAQ 종가: {kosdaq_close}")
 
     except Exception as e:
         result.append(f"지수 조회 실패: {e}")
